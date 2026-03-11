@@ -1,0 +1,113 @@
+{
+  "appName": "UniBooktime",
+  "version": "1.0.0",
+  "description": "Productivity and study app with assignments, timer, meditation, AI bot, and QR scanner",
+  "icon": {
+    "type": "circle",
+    "backgroundColor": "#0D1B2A",
+    "edgeColor": "#87CEEB",
+    "text": "Booktime",
+    "textColor": "#FFD700"
+  },
+  "screens": [
+    {
+      "name": "Welcome",
+      "type": "splash",
+      "message": "Welcome, {userName}!"
+    },
+    {
+      "name": "Profile",
+      "fields": [
+        "name",
+        "country",
+        "phone",
+        "email",
+        "profilePicture"
+      ]
+    },
+    {
+      "name": "Assignments",
+      "fields": [
+        "title",
+        "description",
+        "deadline",
+        "status"
+      ],
+      "actions": [
+        "addAssignment",
+        "editAssignment",
+        "markComplete"
+      ]
+    },
+    {
+      "name": "Study Materials",
+      "fields": [
+        "fileName",
+        "fileURL",
+        "fileType"
+      ],
+      "actions": [
+        "openFile",
+        "downloadFile"
+      ]
+    },
+    {
+      "name": "Daily Goals",
+      "fields": [
+        "date",
+        "goalDescription",
+        "completed",
+        "timeSpent"
+      ]
+    },
+    {
+      "name": "Focus Timer",
+      "fields": [
+        "timerDuration",
+        "breakDuration"
+      ],
+      "actions": [
+        "startTimer",
+        "pauseTimer",
+        "stopTimer"
+      ]
+    },
+    {
+      "name": "Meditation",
+      "fields": [
+        "audioFile",
+        "duration"
+      ]
+    },
+    {
+      "name": "AI Bot",
+      "description": "Answer questions and generate quizzes and essays",
+      "fields": [
+        "userQuestion",
+        "aiResponse"
+      ]
+    },
+    {
+      "name": "QR Code",
+      "fields": [
+        "scanQRCode",
+        "generateQRCode"
+      ]
+    },
+    {
+      "name": "Help",
+      "description": "Contact developer in case of any issues",
+      "actions": [
+        "sendEmail",
+        "contactForm"
+      ]
+    }
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "French",
+    "Chinese",
+    "Arabic"
+  ]
+}
