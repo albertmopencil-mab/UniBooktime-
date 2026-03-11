@@ -1,0 +1,29 @@
+name: UniBooktime Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Placeholder Build Step
+      run: |
+        echo "Replace this with your app builder commands to build UniBooktime APK or web app"
+
+    - name: Upload Build Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: UniBooktime-Build
+        path: ./build/
